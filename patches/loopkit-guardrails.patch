@@ -1,0 +1,31 @@
+From 2a39ae61c5594f888285d096557caaeedf487490 Mon Sep 17 00:00:00 2001
+From: marydaisy <marycwright@gmail.com>
+Date: Wed, 20 Aug 2025 20:19:35 -0700
+Subject: [PATCH] Update Guardrail+Settings.swift
+
+---
+ LoopKit/Extensions/Guardrail+Settings.swift | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/LoopKit/LoopKit/Extensions/Guardrail+Settings.swift b/LoopKit/LoopKit/Extensions/Guardrail+Settings.swift
+index 1c8398fee..74760e464 100644
+--- a/LoopKit/LoopKit/Extensions/Guardrail+Settings.swift
++++ b/LoopKit/LoopKit/Extensions/Guardrail+Settings.swift
+@@ -9,7 +9,7 @@
+ import HealthKit
+ 
+ public extension Guardrail where Value == HKQuantity {
+-    static let suspendThreshold = Guardrail(absoluteBounds: (66.1)...(110.9), recommendedBounds: (73.1)...(80.9), unit: .milligramsPerDeciliter, startingSuggestion: 80)
++    static let suspendThreshold = Guardrail(absoluteBounds: (60)...(110.9), recommendedBounds: (73.1)...(80.9), unit: .milligramsPerDeciliter, startingSuggestion: 80)
+ 
+     static func maxSuspendThresholdValue(correctionRangeSchedule: GlucoseRangeSchedule?, preMealTargetRange: ClosedRange<HKQuantity>?, workoutTargetRange: ClosedRange<HKQuantity>?) -> HKQuantity {
+ 
+@@ -23,7 +23,7 @@ public extension Guardrail where Value == HKQuantity {
+         .min()!
+     }
+ 
+-    static let correctionRange = Guardrail(absoluteBounds: (86.1)...(180.5), recommendedBounds: (99.1)...(115.9), unit: .milligramsPerDeciliter, startingSuggestion: 100)
++    static let correctionRange = Guardrail(absoluteBounds: (70)...(180.5), recommendedBounds: (99.1)...(115.9), unit: .milligramsPerDeciliter, startingSuggestion: 100)
+ 
+     static func minCorrectionRangeValue(suspendThreshold: GlucoseThreshold?) -> HKQuantity {
+         return [
