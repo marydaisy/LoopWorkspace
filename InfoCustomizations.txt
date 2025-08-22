@@ -1,4 +1,4 @@
 TidepoolServiceClientId=diy-loop
-BUNDLE_IDENTIFIER_PREFIX = com.marydaisy2
-APP_GROUP_IDENTIFIER_PREFIX = group.com.marydaisy2
-KEYCHAIN_GROUPS_PREFIX = com.marydaisy2
+BUNDLE_IDENTIFIER_PREFIX=com.marydaisy6
+APP_GROUP_IDENTIFIER_PREFIX=group.com.marydaisy6
+KEYCHAIN_GROUPS_PREFIX=com.marydaisy6
